@@ -3,12 +3,15 @@ class CountDigit
 {
     static void countdigit(int n)
     {
+        int count = 0;
         while(n>0)
         {
             int lastdigit = n%10;
             System.out.println(lastdigit);
+            count++;
             n = n/10;
         }
+        System.out.println("Total Digit: "+count);
     }
     public static void main(String [] args)
     {
